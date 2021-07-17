@@ -1,0 +1,19 @@
+# Ignore Logs
+logs
+*.log
+
+# Ignore the build directory
+/dist
+/build
+
+# The file containing environment variables
+.env
+
+# Ignore IDE specific files
+.idea/
+.vscode/
+*.sw*
+
+# Gradle ignore
+.gradle/
+build/

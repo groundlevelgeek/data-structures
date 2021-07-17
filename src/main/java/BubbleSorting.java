@@ -12,19 +12,14 @@ public class BubbleSorting {
         int bubbleIndex = array.length - 1;
 
         while (bubbleIndex > 0) {
-            var noSwap = true;
             for (int index = 0; index < bubbleIndex; index++) {
                 if (array[index] > array[index + 1]) {
                     var holder = array[index];
                     array[index] = array[index + 1];
                     array[index + 1] = holder;
-                    noSwap = false;
                 }
             }
             bubbleIndex -= 1;
-            if (noSwap) {
-                return;
-            }
         }
 
         System.out.println("\n\nSorted Array using Bubble Sort: ----------\n");
